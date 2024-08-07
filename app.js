@@ -15,11 +15,11 @@ function start() {
     if (getScore() >= 50) {
       const circleImg = document.getElementById('circle');
         circleImg.setAttribute('src', 'image/geniaF.png');
-        circleImg.style.marginLeft = '100px'; 
+        circleImg.style.marginLeft = '50px'; 
 
       const h1Element = document.querySelector('.circle h1');
         h1Element.textContent = 'Так це Євгеній';
-        h1Element.style.marginLeft = '140px'; 
+        h1Element.style.marginLeft = '100px'; 
   
       document.querySelector('.circle h3').textContent = 'Давайте допоможемо Євгену ухильнутись, тапай 100 монет';
     }
@@ -27,7 +27,7 @@ function start() {
     if (getScore() >= 100) {
         const circleImg3 = document.getElementById('circle');
             circleImg3.setAttribute('src', 'image/rezerv.png');
-            circleImg3.style.marginLeft = '150px';
+            circleImg3.style.marginLeft = '20px';
             
              
   
@@ -39,12 +39,12 @@ function start() {
   
         const h11Element = document.querySelector('.circle h1');
             h11Element.textContent = 'Чудово Євген вільна людина, вільної країни';
-            h11Element.style.marginLeft = '50px'; 
+            h11Element.style.marginLeft = '20px'; 
             h11Element.style.color = 'black' ;
     
         const h3Element = document.querySelector('.circle h3');
              h3Element.textContent = 'Тепер допоможемо Євгену поїхати до Ахмета, тапай 200 монет';
-             h3Element.style.marginLeft = '100px';
+             h3Element.style.marginLeft = '50px';
              h3Element.style.color = 'black' ;
 
         const money3 = document.querySelector('.score ');
