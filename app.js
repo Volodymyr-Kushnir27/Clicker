@@ -21,10 +21,10 @@ function start() {
         h1Element.textContent = 'Так це Євгеній';
         h1Element.style.marginLeft = '140px'; 
   
-      document.querySelector('.circle h3').textContent = 'Давайте допоможемо Євгену ухильнутись, тапай 200 монет';
+      document.querySelector('.circle h3').textContent = 'Давайте допоможемо Євгену ухильнутись, тапай 100 монет';
     }
 
-    if (getScore() >= 200) {
+    if (getScore() >= 100) {
         const circleImg3 = document.getElementById('circle');
             circleImg3.setAttribute('src', 'image/rezerv.png');
             circleImg3.style.marginLeft = '150px';
@@ -43,7 +43,7 @@ function start() {
             h11Element.style.color = 'black' ;
     
         const h3Element = document.querySelector('.circle h3');
-             h3Element.textContent = 'Тепер допоможемо Євгену поїхати до Ахмета, тапай 400 монет';
+             h3Element.textContent = 'Тепер допоможемо Євгену поїхати до Ахмета, тапай 200 монет';
              h3Element.style.marginLeft = '100px';
              h3Element.style.color = 'black' ;
 
@@ -51,7 +51,7 @@ function start() {
             money3.style.color = 'black';
       }
     
-      if (getScore() >= 230) {
+      if (getScore() >= 200) {
         const circleImg4 = document.getElementById('circle');
             circleImg4.setAttribute('src', 'image/vital.png');
             circleImg4.style.marginLeft = '150px';
@@ -79,50 +79,50 @@ function start() {
       }
 
   
-    if (getScore() === 50) {
-        let userInputName;
-        const validNames = ['Женя', 'Євген', 'Евген'];
-        let isValid = false;
+    // if (getScore() === 50) {
+    //     let userInputName;
+    //     const validNames = ['Женя', 'Євген', 'Евген'];
+    //     let isValid = false;
     
-        while (!isValid) {
-          userInputName = prompt('Вгадайте ім`я ухилянта:');
-          console.log('Вгадайте ім`я ухилянта:', userInputName);
+    //     while (!isValid) {
+    //       userInputName = prompt('Вгадайте ім`я ухилянта:');
+    //       console.log('Вгадайте ім`я ухилянта:', userInputName);
     
-          if (validNames.includes(userInputName)) {
-            isValid = true;
-            localStorage.setItem('userInputName', userInputName);
-          } else {
-            alert('Ви не вгадали ухилянта');
-          }
-        }
-      }
+    //       if (validNames.includes(userInputName)) {
+    //         isValid = true;
+    //         localStorage.setItem('userInputName', userInputName);
+    //       } else {
+    //         alert('Ви не вгадали ухилянта');
+    //       }
+    //     }
+    //   }
 
-      if (getScore() === 200) {
-        let userInputName;
-        const validNames = ['13'];
-        let isValid = false;
+    //   if (getScore() === 200) {
+    //     let userInputName;
+    //     const validNames = ['13'];
+    //     let isValid = false;
     
-        while (!isValid) {
-          userInputName = prompt('Вгадайте розмір пісюна Євгена :');
-          console.log('Вгадайте розмір пісюна Євгена :', userInputName);
+    //     while (!isValid) {
+    //       userInputName = prompt('Вгадайте розмір пісюна Євгена :');
+    //       console.log('Вгадайте розмір пісюна Євгена :', userInputName);
     
-          if (!isNaN(userInputName)) {
-            let userInputNumber = parseInt(userInputName);
+    //       if (!isNaN(userInputName)) {
+    //         let userInputNumber = parseInt(userInputName);
     
-            if (userInputNumber > 13) {
-              alert('Піська менша');
-            } else if (userInputNumber < 13) {
-              alert('Піська більша');
-            } else if (userInputNumber === 13) {
-              isValid = true;
-              localStorage.setItem('userInputName', userInputName);
-              alert('ТАК !!! Ви вгадали розмір Євгена');
-            }
-          } else {
-            alert('Будь ласка, введіть число в сантиметрах');
-          }
-        }
-      }
+    //         if (userInputNumber > 13) {
+    //           alert('Піська менша');
+    //         } else if (userInputNumber < 13) {
+    //           alert('Піська більша');
+    //         } else if (userInputNumber === 13) {
+    //           isValid = true;
+    //           localStorage.setItem('userInputName', userInputName);
+    //           alert('ТАК !!! Ви вгадали розмір Євгена');
+    //         }
+    //       } else {
+    //         alert('Будь ласка, введіть число в сантиметрах');
+    //       }
+    //     }
+    //   }
 
 
   }
